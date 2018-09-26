@@ -12,7 +12,7 @@ Principalmente los siguientes aspectos:
 ---
 1. Asegúrate de tener `Node.js` y `npm` instalados.
 2. Se requiere de una cuenta de **GitHub** para realizar este ejercicio.
-3. Se solicita crear la aplicación utilizando **Vue** 2.
+3. Se solicita crear la aplicación utilizando la tecnología Web de su elección, se privilegiarán a los candidatos que utilicen **Vue 2**.
 4. Recomendamos emplear un máximo de **3 horas** y enviar todo lo que puedas.
 5. **Antes de comenzar a programar:**
     - Realizar un `Fork` de este repositorio.
