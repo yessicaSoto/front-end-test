@@ -1,6 +1,7 @@
 # Prueba Front End Sani Medical
 
 **¿Qué se busca evaluar?**
+
 Principalmente los siguientes aspectos:
 
 * Creatividad para resolver los requerimientos,
@@ -26,6 +27,7 @@ Principalmente los siguientes aspectos:
 **Objetivo:** Crear una aplicación que ayude a obtener una lista de usuarios y muestre la información de sus perfiles, explotando el API Rest pública de GitHub https://api.github.com/search/users?q=YOUR_NAME.
 
 **Requerimientos generales**
+
 1. La aplicación debe cumplir con los siguientes **requisitos funcionales:**
     - Crear una aplicación que incluya un campo de entrada texto y un botón, para que se pueda capturar el usuario y recuperar la información utilizando el API anteriormente indicada.
     - Mostrar los primeros 10 usuarios del resultado de la búsqueda, incluyendo su nombre de usuario `'user.login'` y el id `'user.id'` de cada registro.
