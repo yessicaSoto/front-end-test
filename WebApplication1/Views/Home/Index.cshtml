@@ -1,0 +1,71 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+<style>
+    .buscar{
+        margin: 10% !important
+    }
+</style>
+<body id="main-custom" class="external-page sb-l-c sb-r-c" style="font-size: 11pt">
+
+
+    <div class="card card-info buscar">
+        <div class="card-header">
+            <h3 class="card-title"><i class="fas fa-user-circle" style="color: aliceblue; height: 25px; width: 25px;"></i>  Busqueda de usuarios</h3>
+        </div>
+
+        <div class="card-body" v-cloak id="app">
+            <form id="buscarUsuario" method="get">
+
+
+                <div class="row">
+                    <div class="col-sm-12">
+                        <div class="col-sm-6">
+
+                            <div class="input-group">
+                                <input type="text" class="form-control" id="idUser" v-model="idUsuario" placeholder="Id de usuario">
+
+                                <div class="input-group-append" @@click="buscar" @@keyup.enter="buscar" style="background-color: white !important">
+                                    <div class="input-group-text" style="background-color: white !important; border: none">
+                                        <i style="color:darkcyan" class="fas fa-search fa-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12 mt-5" id="tabla">
+                        <div class="table-responsive">
+                            <table id="tblUsuarios" class="table w-100">
+                                <thead>
+                                    <tr>
+                                        <th>Id Usuario</th>
+                                        <th>Nombre</th>
+                                        <th>Foto</th>
+                                    </tr>
+                                </thead>
+                                <tbody></tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+        <!-- /.card-body -->
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jqueryval")
+    @Scripts.Render("~/bundles/vue")
+    @Scripts.Render("~/bundles/datatable")
+
+    <script src="../../ControllerVue/index.js"></script>
+   
+</body>
